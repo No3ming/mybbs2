@@ -1,17 +1,21 @@
-var mongodb = require("./index");
+let mongodb = require("./index");
 
 /*
  * 用户注册
  * */
 
-var Schema = mongodb.mongoose.Schema;
+let Schema = mongodb.mongoose.Schema;
 
-var registerSchema = new Schema({
-  username: {type: String},
-  password: {type: String},
-  createTime: {type: Date, default: Date.new}
+let registerSchema = new Schema({
+  username: String,
+  email: String,
+  password: String,
+  creat_date: String,
+  update_date: String,
+  is_delete: Number,
+  timestamp: Number
 });
 
-var userModel = mongodb.mongoose.model("bbsUser", registerSchema);
+let userModel = mongodb.mongoose.model("users", registerSchema);
 
 exports.userList = userModel;

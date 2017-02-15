@@ -13,9 +13,10 @@ import Login from './components/Login.vue'
 import Register from './components/Register.vue'
 import Home from './components/Home.vue'
 import Main from './components/Main.vue'
-import Table from './components/nav1/Table.vue'
-import Form from './components/nav1/Form.vue'
-import Tabs from './components/nav1/Tabs.vue'
+import NewList from './components/menu/newList.vue'
+import DayList from './components/menu/dayList.vue'
+import SevenList from './components/menu/sevenList.vue'
+import ThirtyList from './components/menu/ThirtyList.vue'
 import VuexComp from './components/nav2/VuexComp.vue'
 import Page5 from './components/nav2/Page5.vue'
 import Page6 from './components/nav3/Page6.vue'
@@ -29,24 +30,25 @@ Vue.prototype.axios = Axios
 
 const routes = [
     {
-        path: '/login',
+        path: '/login.html',
         component: Login,
         hidden: true
     },{
-        path: '/register',
+        path: '/register.html',
         component: Register,
         hidden: true
     },
     {
         path: '/',
         component: Home,
-        name: '导航一',
+        name: '导航--推荐榜单',
         iconCls: 'el-icon-message',//图标样式class
         children: [
             { path: '/', component: Main, name: 'Home' ,hidden:true},
-            { path: '/table', component: Table, name: '用户管理' },
-            { path: '/form', component: Form, name: '表单提交' },
-            { path: '/tabs', component: Tabs, name: '标签页' },
+            { path: '/new-list.html', component: NewList, name: '新上榜' },
+            { path: '/day-list.html', component: DayList, name: '日报' },
+            { path: '/seven-list.html', component: SevenList, name: '7日热门' },
+            { path: '/Thirty-list.html', component: ThirtyList, name: '30日热门' }
         ]
     },
     {
@@ -55,8 +57,8 @@ const routes = [
         name: '导航二',
         iconCls: 'fa fa-id-card-o',
         children: [
-            { path: '/vuex', component: VuexComp, name: 'Vuex' },
-            { path: '/page5', component: Page5, name: '测试页面' }
+            { path: '/vuex.html', component: VuexComp, name: 'Vuex' },
+            { path: '/page5.html', component: Page5, name: '测试页面' }
         ]
     },
     {
@@ -75,7 +77,7 @@ const routes = [
         name: 'Charts',
         iconCls: 'fa fa-bar-chart',
         children: [
-            { path: '/echarts', component: echarts, name: 'echarts' }
+            { path: '/echarts.html', component: echarts, name: 'echarts' }
         ]
     },
     {
@@ -86,7 +88,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    routes
+    routes,
+    mode: 'history'
 })
 
 router.beforeEach((to, from, next) => {

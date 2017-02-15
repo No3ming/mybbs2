@@ -2,7 +2,7 @@
   "name": "express_app",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "EamonnZhang <394997632@qq.com>",
+  "author": "No3ming <540306318@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

@@ -6,17 +6,12 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo/es5')(session)
 const bodyParser = require('body-parser');
+const mongodb = require('./mongodb/models/index');
 
-const mongoose = require('mongoose');
 const models = path.join(__dirname, 'mongodb/models');
 const fs = require('fs');
 
 const app = express();
-
-mongoose.connect('mongodb://localhost:27017/mybbs');
-mongoose.connection.on('open', function () {
-  console.log('-----------数据库连接成功！------------');
-});
 
 //注册mongoose模型
 fs.readdirSync(models)
@@ -46,7 +41,7 @@ app.use(session({
   resave: true, // 即使 session 没有被修改，也保存 session 值，默认为 true
   saveUninitialized: true,
   store: new MongoStore({
-    mongooseConnection: mongoose.connection //使用已有的数据库连接
+    mongooseConnection: mongodb.mongoose.connection //使用已有的数据库连接
   })
 }))
 

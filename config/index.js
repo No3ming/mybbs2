@@ -32,3 +32,5 @@ module.exports = {
     cssSourceMap: false
   }
 }
+
+exports.md5Pre = "!@#$%(*&^)"

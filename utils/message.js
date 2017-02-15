@@ -1,11 +1,11 @@
 exports.genMsg = (success,msg,data=[],meta={}) => {
-    var msg = {
+    let message = {
         success : success,
         msg : msg,
         data : data,
         meta:meta
     }
-    return msg;
+    return message;
 }
 exports.genSuccessMsg = (msg,data,meta) => {
     return this.genMsg(true,msg,data,meta)
