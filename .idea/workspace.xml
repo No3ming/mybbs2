@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6463f09c-f10e-4e5d-815b-ed2e92fae1d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/Publish.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/article/Article.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/publish/Crop.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/publish/PublishPics.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/publish/PublishPreview.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/publish/PublishVideo.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/src/components/publish/Upload.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongodb/controllers/user.js" afterPath="$PROJECT_DIR$/mongodb/controllers/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/components/Home.vue" afterPath="$PROJECT_DIR$/public/src/components/Home.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/components/Login.vue" afterPath="$PROJECT_DIR$/public/src/components/Login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/components/Main.vue" afterPath="$PROJECT_DIR$/public/src/components/Main.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/components/Register.vue" afterPath="$PROJECT_DIR$/public/src/components/Register.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/src/main.js" afterPath="$PROJECT_DIR$/public/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.js" afterPath="$PROJECT_DIR$/routes/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/message.js" afterPath="$PROJECT_DIR$/utils/message.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,8 +41,8 @@
       <file leaf-file-name="Publish.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/src/components/Publish.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="294" column="17" lean-forward="false" selection-start-line="294" selection-start-column="17" selection-end-line="294" selection-end-column="17" />
+            <state relative-caret-position="168">
+              <caret line="267" column="12" lean-forward="true" selection-start-line="267" selection-start-column="12" selection-end-line="267" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#15833#15881#0" expanded="true" />
@@ -833,7 +818,7 @@
       <workItem from="1487044274449" duration="12813000" />
       <workItem from="1487066487979" duration="18238000" />
       <workItem from="1487143862045" duration="87000" />
-      <workItem from="1487143964856" duration="30936000" />
+      <workItem from="1487143964856" duration="30983000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1487155871013</created>
@@ -842,11 +827,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487155871013</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="富文本框没做好">
+      <created>1487328394995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487328394995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62074000" />
+    <option name="totallyTimeSpent" value="62121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -930,7 +922,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="富文本框没做好" />
+    <option name="LAST_COMMIT_MESSAGE" value="富文本框没做好" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1357,8 +1350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/src/components/Publish.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="294" column="17" lean-forward="false" selection-start-line="294" selection-start-column="17" selection-end-line="294" selection-end-column="17" />
+        <state relative-caret-position="168">
+          <caret line="267" column="12" lean-forward="true" selection-start-line="267" selection-start-column="12" selection-end-line="267" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#15833#15881#0" expanded="true" />
