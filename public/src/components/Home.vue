@@ -107,6 +107,13 @@
         this.$confirm('确认退出吗?', '提示', {
           type: 'warning'
         }).then(() => {
+          this.axios.post('/api/user-ligout', {
+            username: self.ruleForm2.username
+          })
+            .then(() => {
+
+            })
+            .catch()
           _this.$router.replace('/login');
         }).catch(() => {
         });

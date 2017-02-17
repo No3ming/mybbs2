@@ -10,7 +10,7 @@
                 placeholder="确认密码：6-20位，字母开头"></el-input>
     </el-form-item>
     <el-form-item style="width:100%;">
-      <el-button type="primary" @click.native.prevent="handleSubmit2">注册</el-button>
+      <el-button type="primary" @click.native.prevent="handleSubmit2">登陆</el-button>
       <el-button @click.native.prevent="handleReset2">重置</el-button>
     </el-form-item>
   </el-form>
@@ -72,7 +72,7 @@
                   self.$router.push('/')
                 } else {
                   console.log(response)
-                  self.$message.error(response.data.data.msg);
+                  self.$message.error(response.data.msg);
                 }
               })
               .catch((error) => {

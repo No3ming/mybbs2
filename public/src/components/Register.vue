@@ -92,7 +92,7 @@
                   self.$router.push('/login')
                 } else {
                   console.log(response)
-                  self.$message.error(response.data.data.msg);
+                  self.$message.error(response.data.msg);
                 }
               })
               .catch((error) => {

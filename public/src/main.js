@@ -30,11 +30,11 @@ Vue.prototype.axios = Axios
 
 const routes = [
     {
-        path: '/login.html',
+        path: '/login',
         component: Login,
         hidden: true
     },{
-        path: '/register.html',
+        path: '/register',
         component: Register,
         hidden: true
     },
