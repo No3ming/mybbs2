@@ -30,7 +30,11 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
+  },
+  upload: {
+      path: process.cwd() + '/uploads'
   }
 }
 
 exports.md5Pre = "!@#$%(*&^)"
+
