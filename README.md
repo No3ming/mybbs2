@@ -39,3 +39,9 @@ npm run build
 http://localhost:3000/admin
 ```
 
+服务器开启
+```
+  PS C:\> & 'C:\Program Files\MongoDB\Server\3.4\bin\mongod' --dbpath d:/mongodb/think/data/db
+```
+
+

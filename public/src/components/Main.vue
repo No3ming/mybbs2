@@ -52,10 +52,10 @@
 </template>
 
 <script>
- // import articleList from './list/Articlelist.vue'
+  import articleList from './list/Articlelist.vue'
   export default {
     components: {
-      // articleList
+      articleList
     }
   }
 </script>

@@ -55,7 +55,8 @@ app.use(devMiddleware)
 app.use(hotMiddleware)
 
 // serve pure static assets
-let staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
+// let staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
+let staticPath = path.posix.join(config.dev.assetsPublicPath)
 app.use(staticPath, express.static('public'))
 // console.log('stativePath',staticPath)
 // console.log('dirPublic',path.resolve(__dirname + '../public/'))

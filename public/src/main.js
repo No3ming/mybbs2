@@ -21,9 +21,8 @@ import ThirtyList from './components/menu/ThirtyList.vue'
 import VuexComp from './components/nav2/VuexComp.vue'
 import Page5 from './components/nav2/Page5.vue'
 import Page6 from './components/nav3/Page6.vue'
-import echarts from './components/charts/echarts.vue'
-import PublishEdit from './page/PublishEdit.vue'
-import PublishAdd from './page/PublishAdd.vue'
+
+import Editormd from './page/Editemd.vue'
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
@@ -50,9 +49,7 @@ const routes = [
             { path: '/new-list.html', component: NewList, name: '新上榜' },
             { path: '/day-list.html', component: DayList, name: '日报' },
             { path: '/seven-list.html', component: SevenList, name: '7日热门' },
-            { path: '/thirty-list.html', component: ThirtyList, name: '30日热门' },
-            { path: '/publishEdit', component: PublishEdit, name: '编辑文章' },
-            { path: '/publishAdd', component: PublishAdd, name: '发表文章' }
+            { path: '/editormd', component: Editormd, name: '发表文章1' }
         ]
     },
     {
@@ -79,10 +76,7 @@ const routes = [
         path: '/',
         component: Home,
         name: 'Charts',
-        iconCls: 'fa fa-bar-chart',
-        children: [
-            { path: '/echarts.html', component: echarts, name: 'echarts' }
-        ]
+        iconCls: 'fa fa-bar-chart'
     },
     {
         path: '*',
