@@ -16,7 +16,7 @@
 	// CommonJS/Node.js
 	if (typeof require === "function" && typeof exports === "object" && typeof module === "object")
     { 
-        module.exports = factory;
+        module.exports = factory();
     }
 	else if (typeof define === "function")  // AMD/CMD/Sea.js
 	{
@@ -544,8 +544,7 @@
                 {
                     _this.loadedDisplay();
                 }
-            }; 
-
+            };
             editormd.loadCSS(loadPath + "codemirror/codemirror.min");
             
             if (settings.searchReplace && !settings.readOnly)
@@ -1800,7 +1799,6 @@
             var editor           = this.editor;
             var preview          = this.preview;
             var settings         = this.settings;
-            
             this.containerMask.hide();
             
             this.save();

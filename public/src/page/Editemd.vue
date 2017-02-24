@@ -6,7 +6,7 @@
 <script>
   //import jquery from '../../static/libs/bower_components/editor.md/examples/js/jquery.min.js'
   //import raphael from 'raphael'
-  import editormd from '../../static/libs/bower_components/editor.md/editormd.js'
+  let editormd = require('../../static/libs/editor.md/editormd.js')
   /*import  '../../static/libs/bower_components/editor.md/lib/codemirror/codemirror.min.css'
   import  '../../static/libs/bower_components/editor.md/lib/codemirror/addon/fold/foldgutter.css'*/
 
@@ -34,7 +34,7 @@
           const testEditor = editormd("test-editormd", {
             width: "90%",
             height: 740,
-            path : '/static/libs/editor.md/lib/',
+            path : 'static/libs/editor.md/lib/',
             theme : "dark",
             previewTheme : "dark",
             editorTheme : "pastel-on-dark",
@@ -51,8 +51,8 @@
             taskList : true,
             tocm            : true,         // Using [TOCM]
             tex : true,                   // 开启科学公式TeX语言支持，默认关闭
-            flowChart : true,             // 开启流程图支持，默认关闭
-            sequenceDiagram : true,       // 开启时序/序列图支持，默认关闭,
+            flowChart : false,             // 开启流程图支持，默认关闭
+            sequenceDiagram : false,       // 开启时序/序列图支持，默认关闭,
             //dialogLockScreen : false,   // 设置弹出层对话框不锁屏，全局通用，默认为true
             //dialogShowMask : false,     // 设置弹出层对话框显示透明遮罩层，全局通用，默认为true
             //dialogDraggable : false,    // 设置弹出层对话框不可拖动，全局通用，默认为true
