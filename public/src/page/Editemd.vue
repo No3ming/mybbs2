@@ -6,7 +6,7 @@
 <script>
   //import jquery from '../../static/libs/bower_components/editor.md/examples/js/jquery.min.js'
   //import raphael from 'raphael'
-  let editormd = require('../../static/libs/editor.md/editormd.js')
+  //require('../../static/libs/editor.md/editormd.js')
   /*import  '../../static/libs/bower_components/editor.md/lib/codemirror/codemirror.min.css'
   import  '../../static/libs/bower_components/editor.md/lib/codemirror/addon/fold/foldgutter.css'*/
 
@@ -31,13 +31,10 @@
     mounted () {
       this.axios.get("/static/libs/bower_components/editor.md/examples/test.md")
         .then((rep) =>{
-          const testEditor = editormd("test-editormd", {
+          let testEditor = window.editormd("test-editormd", {
             width: "90%",
             height: 740,
-            path : 'static/libs/editor.md/lib/',
-            theme : "dark",
-            previewTheme : "dark",
-            editorTheme : "pastel-on-dark",
+            path : '/static/libs/editor.md/lib/',
             markdown : rep.data,
             codeFold : true,
             //syncScrolling : false,
@@ -58,6 +55,7 @@
             //dialogDraggable : false,    // 设置弹出层对话框不可拖动，全局通用，默认为true
             //dialogMaskOpacity : 0.4,    // 设置透明遮罩层的透明度，全局通用，默认值为0.1
             //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为#fff
+            autoLoadModules:true,
             imageUpload : true,
             imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
             imageUploadURL : "./php/upload.php",
@@ -72,6 +70,10 @@
               //this.height(480);
               //this.resize("100%", 640);
             }
+          });
+          testEditor.config({
+            tocDropdown   : true,
+            tocTitle      : "目录 Table of Contents",
           });
         });
     }
